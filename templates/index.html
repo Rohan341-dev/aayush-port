@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" class="premium-smooth-scroll">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Aayush | Premium Web Design & Development Portfolio</title>
+    <meta content="Premium web design and development portfolio by Aayush. Modern websites built for conversion, crafted with premium UX." name="description">
+    <meta content="web design, web development, UI/UX design, portfolio, developer, Next.js, React, Tailwind CSS" name="keywords">
+    <meta content="Aayush" name="author">
+    <meta content="index, follow" name="robots">
+
+    <meta content="website" property="og:type">
+    <meta content="https://aayush.dev/" property="og:url">
+    <meta content="Aayush | Premium Web Design & Development Portfolio" property="og:title">
+    <meta content="Premium web design and development portfolio by Aayush. Modern websites built for conversion." property="og:description">
+
+    <link href="favicon.png" rel="icon" type="image/png">
+    <link href="favicon.png" rel="apple-touch-icon">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aayush",
+        "url": "https://aayush.dev/",
+        "jobTitle": "Web Designer & Developer",
+        "description": "I create modern, high-converting websites with premium design and powerful functionality built for serious businesses."
+      }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+  </head>
+  <body class="premium-smooth-scroll-ready">
+    <div class="site-ambient" aria-hidden="true">
+      <div class="site-grid"></div>
+      <div class="site-orb orb-a"></div>
+      <div class="site-orb orb-b"></div>
+      <div class="site-orb orb-c"></div>
+      <div class="site-beam beam-a"></div>
+      <div class="site-beam beam-b"></div>
+    </div>
+    <div class="noise"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <nav aria-label="Main navigation" id="mainNav">
+      <div class="nav-highlight"></div>
+      <a class="active" href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#skills">Skills</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="mobile-topbar" aria-hidden="true">
+      <div class="mobile-topbar-brand">
+        <strong>Aayush</strong>
+        <span>Web Designer & Developer</span>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-controls="mobileMenuOverlay" aria-expanded="false" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="4" y1="7" x2="20" y2="7"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="17" x2="20" y2="17"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true">
+      <div class="mobile-menu-sheet" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+        <div class="mobile-menu-header">
+          <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <nav class="mobile-menu-links" aria-label="Mobile navigation links">
+          <a href="#home">Home</a>
+          <a href="#work">Work</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#skills">Skills</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-inner">
+          <div class="hero-kicker reveal active">Premium Web Design</div>
+          <h1 class="reveal active">
+            Websites That
+            <br>
+            <span>Convert & Inspire.</span>
+          </h1>
+          <p class="reveal active">
+            I create premium web experiences that blend stunning design with powerful functionality. Built for modern businesses that demand excellence.
+          </p>
+          <div class="hero-actions reveal active">
+            <a class="btn-main" href="#work">View Work</a>
+            <a class="btn-secondary" href="#contact">Start a Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section" id="work">
+        <div class="container">
+          <div class="work-top reveal active">
+            <div class="work-title">
+              <h2>
+                Featured
+                <span>Projects</span>
+              </h2>
+            </div>
+          </div>
+
+          <div class="work-wall">
+            <article class="work-card reveal" style="transition-delay: 0ms;">
+              <img src="https://via.placeholder.com/600x400?text=E-Commerce+Platform" alt="E-Commerce Platform Project">
+              <div class="work-card-details">
+                <div class="work-card-category">E-Commerce</div>
+                <div class="work-card-title">Online Store Platform</div>
+                <div class="work-card-tech">
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">Tailwind</span>
+                  <span class="tech-badge">Stripe</span>
+                </div>
+                <div class="work-card-buttons">
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="work-card reveal" style="transition-delay: 70ms;">
+              <img src="https://via.placeholder.com/600x400?text=SaaS+Dashboard" alt="SaaS Dashboard Project">
+              <div class="work-card-details">
+                <div class="work-card-category">SaaS</div>
+                <div class="work-card-title">Analytics Dashboard</div>
+                <div class="work-card-tech">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">MongoDB</span>
+                </div>
+                <div class="work-card-buttons">
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="work-card reveal" style="transition-delay: 140ms;">
+              <img src="https://via.placeholder.com/600x400?text=Agency+Website" alt="Agency Website Project">
+              <div class="work-card-details">
+                <div class="work-card-category">Website</div>
+                <div class="work-card-title">Agency Branding</div>
+                <div class="work-card-tech">
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">Framer</span>
+                  <span class="tech-badge">CMS</span>
+                </div>
+                <div class="work-card-buttons">
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="work-card reveal" style="transition-delay: 210ms;">
+              <img src="https://via.placeholder.com/600x400?text=Mobile+App" alt="Mobile App Project">
+              <div class="work-card-details">
+                <div class="work-card-category">Mobile</div>
+                <div class="work-card-title">Fitness Tracking App</div>
+                <div class="work-card-tech">
+                  <span class="tech-badge">React Native</span>
+                  <span class="tech-badge">Firebase</span>
+                  <span class="tech-badge">Expo</span>
+                </div>
+                <div class="work-card-buttons">
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="work-card reveal" style="transition-delay: 280ms;">
+              <img src="https://via.placeholder.com/600x400?text=Brand+Identity" alt="Brand Identity Project">
+              <div class="work-card-details">
+                <div class="work-card-category">Branding</div>
+                <div class="work-card-title">Visual Identity System</div>
+                <div class="work-card-tech">
+                  <span class="tech-badge">Design</span>
+                  <span class="tech-badge">Figma</span>
+                  <span class="tech-badge">UI/UX</span>
+                </div>
+                <div class="work-card-buttons">
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="work-card reveal" style="transition-delay: 350ms;">
+              <img src="https://via.placeholder.com/600x400?text=Content+Platform" alt="Content Platform Project">
+              <div class="work-card-details">
+                <div class="work-card-category">CMS</div>
+                <div class="work-card-title">Content Management</div>
+                <div class="work-card-tech">
+                  <span class="tech-badge">Headless CMS</span>
+                  <span class="tech-badge">GraphQL</span>
+                  <span class="tech-badge">Next.js</span>
+                </div>
+                <div class="work-card-buttons">
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
+                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="proof-row reveal">
+            <div class="proof-card">
+              <strong><span class="count" data-target="80">0</span>+</strong>
+              <span>Projects</span>
+            </div>
+            <div class="proof-card">
+              <strong><span class="count" data-target="60">0</span>+</strong>
+              <span>Happy Clients</span>
+            </div>
+            <div class="proof-card">
+              <strong><span class="count" data-target="250">0</span>M+</strong>
+              <span>Total Visitors</span>
+            </div>
+            <div class="proof-card">
+              <strong><span class="count" data-target="98">0</span>%</strong>
+              <span>Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad container reviews-section" id="reviews">
+        <div class="section-header reveal">
+          <h2>Trusted by Industry Leaders</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <a class="review-card reveal" href="#" target="_blank" rel="noopener noreferrer">
+            <div class="review-content">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Aayush delivered an exceptional website that perfectly captures our brand. The design is modern, the performance is incredible, and the user experience is outstanding. Highly recommended!"
+              </p>
+              <div class="review-user">
+                <div class="review-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                <div class="review-info">
+                  <h4>Sarah Johnson</h4>
+                  <span>CEO, TechStart Inc</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="review-card reveal reveal-delay-1" href="#" target="_blank" rel="noopener noreferrer">
+            <div class="review-content">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Working with Aayush was seamless. The website not only looks amazing but has increased our conversions by 45%. Professional, creative, and delivers on time!"
+              </p>
+              <div class="review-user">
+                <div class="review-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                <div class="review-info">
+                  <h4>Michael Chen</h4>
+                  <span>Founder, Digital Hub</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="review-card reveal reveal-delay-2" href="#" target="_blank" rel="noopener noreferrer">
+            <div class="review-content">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "The best designer I've worked with. Aayush understood our vision instantly and executed it perfectly. The attention to detail is remarkable. Will definitely work together again!"
+              </p>
+              <div class="review-user">
+                <div class="review-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                <div class="review-info">
+                  <h4>Emma Davis</h4>
+                  <span>Marketing Director</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section-pad container skills-section" id="skills">
+        <div class="section-header reveal">
+          <h2>Technical Expertise</h2>
+          <p>Proficient in modern web technologies and frameworks that power premium digital experiences.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="skill-item reveal">
+              <div class="skill-label">
+                <h4>React.js</h4>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-bar" style="--skill-percent: 95%;">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+            <div class="skill-item reveal reveal-delay-1">
+              <div class="skill-label">
+                <h4>Next.js</h4>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="skill-bar" style="--skill-percent: 92%;">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+            <div class="skill-item reveal reveal-delay-2">
+              <div class="skill-label">
+                <h4>Node.js</h4>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar" style="--skill-percent: 88%;">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+            <div class="skill-item reveal reveal-delay-3">
+              <div class="skill-label">
+                <h4>Tailwind CSS</h4>
+                <span class="skill-percent">96%</span>
+              </div>
+              <div class="skill-bar" style="--skill-percent: 96%;">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-item reveal">
+              <div class="skill-label">
+                <h4>MongoDB</h4>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar" style="--skill-percent: 85%;">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+            <div class="skill-item reveal reveal-delay-1">
+              <div class="skill-label">
+                <h4>UI/UX Design</h4>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar" style="--skill-percent: 90%;">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+            <div class="skill-item reveal reveal-delay-2">
+              <div class="skill-label">
+                <h4>WordPress</h4>
+                <span class="skill-percent">82%</span>
+              </div>
+              <div class="skill-bar" style="--skill-percent: 82%;">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+            <div class="skill-item reveal reveal-delay-3">
+              <div class="skill-label">
+                <h4>Shopify</h4>
+                <span class="skill-percent">87%</span>
+              </div>
+              <div class="skill-bar" style="--skill-percent: 87%;">
+                <div class="skill-bar-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section container" id="about">
+        <div class="about-grid reveal">
+          <div class="about-content">
+            <h2>Crafting Digital Excellence</h2>
+            <div class="about-text">
+              <p>
+                I specialize in creating modern web experiences that drive business growth. With 5+ years of experience in web design and development, I've helped 60+ businesses establish a powerful online presence.
+              </p>
+            </div>
+            <ul class="about-points">
+              <li>Expert in React, Next.js & Tailwind CSS</li>
+              <li>Premium UI/UX design focused on conversion</li>
+              <li>Fast, secure, and SEO-optimized websites</li>
+            </ul>
+            <div class="about-actions">
+              <a class="guide-btn" href="#contact">Let's Work Together</a>
+              <div class="about-rating">
+                <strong>★★★★★</strong>
+                <span>Trusted by 60+ Clients</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="about-image-wrapper">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">👨‍💻</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad container process-section" id="services">
+        <div class="section-header reveal">
+          <h2>My Service Process</h2>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <div class="process-media">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">🎯</div>
+            </div>
+            <div class="process-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+            </div>
+            <h3>Discovery & Strategy</h3>
+            <p>We discuss your business goals, target audience, and vision to create a strategic roadmap for your website.</p>
+          </article>
+
+          <article class="process-card reveal reveal-delay-1">
+            <div class="process-media">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">🎨</div>
+            </div>
+            <div class="process-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+            </div>
+            <h3>Design & Development</h3>
+            <p>I create stunning designs with cutting-edge technology, focusing on both aesthetics and performance.</p>
+          </article>
+
+          <article class="process-card reveal reveal-delay-2">
+            <div class="process-media">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">✅</div>
+            </div>
+            <div class="process-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+            </div>
+            <h3>Launch & Support</h3>
+            <p>Your website goes live with full optimization. I provide ongoing support to ensure everything runs smoothly.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-pad container faq-section" id="faq">
+        <div class="section-header reveal">
+          <h2>Common Questions</h2>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-trigger">
+              What's your typical project timeline?
+              <span>+</span>
+            </button>
+            <div class="faq-content">
+              <div>
+                Most projects take 4-12 weeks depending on complexity. I provide a detailed timeline during our initial consultation.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-trigger">
+              Do you provide hosting and maintenance?
+              <span>+</span>
+            </button>
+            <div class="faq-content">
+              <div>
+                I can recommend hosting providers and help with initial setup. I also offer ongoing maintenance and support packages.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-trigger">
+              Will my website be mobile-friendly?
+              <span>+</span>
+            </button>
+            <div class="faq-content">
+              <div>
+                Absolutely. All websites I create are fully responsive and optimized for mobile, tablet, and desktop devices.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-trigger">
+              What about SEO optimization?
+              <span>+</span>
+            </button>
+            <div class="faq-content">
+              <div>
+                SEO is built into every project. I follow best practices for performance, structure, and content optimization.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad container pricing-section" id="pricing">
+        <div class="section-header reveal">
+          <h2>Flexible Pricing Plans</h2>
+          <p>Transparent pricing for projects of all sizes. Each plan includes ongoing support and regular updates.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card reveal">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Starter</h3>
+              <p class="pricing-desc">Perfect for small projects and startups</p>
+              <div class="pricing-price">
+                <span class="pricing-amount">$2,999</span>
+                <span class="pricing-period">one-time</span>
+              </div>
+            </div>
+            <div class="pricing-features">
+              <div class="pricing-feature">Up to 5 pages</div>
+              <div class="pricing-feature">Responsive design</div>
+              <div class="pricing-feature">SEO optimization</div>
+              <div class="pricing-feature">Contact form</div>
+              <div class="pricing-feature">2 revisions</div>
+            </div>
+            <a class="pricing-cta" href="#contact">Get Started</a>
+          </div>
+
+          <div class="pricing-card featured reveal reveal-delay-2">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Professional</h3>
+              <p class="pricing-desc">Most popular for growing businesses</p>
+              <div class="pricing-price">
+                <span class="pricing-amount">$5,999</span>
+                <span class="pricing-period">one-time</span>
+              </div>
+            </div>
+            <div class="pricing-features">
+              <div class="pricing-feature">Up to 15 pages</div>
+              <div class="pricing-feature">Advanced features</div>
+              <div class="pricing-feature">Full SEO strategy</div>
+              <div class="pricing-feature">E-commerce ready</div>
+              <div class="pricing-feature">5 revisions</div>
+              <div class="pricing-feature">2 months support</div>
+            </div>
+            <a class="pricing-cta" href="#contact">Start Project</a>
+          </div>
+
+          <div class="pricing-card reveal reveal-delay-1">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Enterprise</h3>
+              <p class="pricing-desc">For complex, custom solutions</p>
+              <div class="pricing-price">
+                <span class="pricing-amount">Custom</span>
+                <span class="pricing-period">quote</span>
+              </div>
+            </div>
+            <div class="pricing-features">
+              <div class="pricing-feature">Unlimited pages</div>
+              <div class="pricing-feature">Custom integrations</div>
+              <div class="pricing-feature">Performance optimization</div>
+              <div class="pricing-feature">API development</div>
+              <div class="pricing-feature">Unlimited revisions</div>
+              <div class="pricing-feature">6 months support</div>
+            </div>
+            <a class="pricing-cta" href="#contact">Request Quote</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section container" id="contact">
+        <div class="cta-card reveal">
+          <h2>Ready to Build Something Amazing?</h2>
+          <p>
+            Let's create a website that not only looks stunning but also drives real business results. Get in touch to discuss your project.
+          </p>
+          <form class="contact-form" id="contactForm" method="POST" action="{% url 'contact' %}">
+            {% csrf_token %}
+            <div class="contact-field">
+              <label for="companyName">Company Name</label>
+              <input id="companyName" name="company_name" type="text" placeholder="Your Company" required="">
+            </div>
+            <div class="contact-field">
+              <label for="clientEmail">Your Email</label>
+              <input id="clientEmail" name="email" type="email" placeholder="your@email.com" required="">
+            </div>
+            <div class="contact-field contact-field-full">
+              <label for="projectDetails">Project Details</label>
+              <textarea id="projectDetails" name="message" placeholder="Tell me about your project..." required=""></textarea>
+            </div>
+            <button class="contact-submit" type="submit">Send Message</button>
+          </form>
+          <div class="social-grid">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-card">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+              <span>Twitter</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-card">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-card">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <span>© <span id="year">2026</span> Aayush. All rights reserved.</span>
+      <span>Premium Web Design & Development</span>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
