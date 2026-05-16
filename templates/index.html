@@ -50,7 +50,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap"
     rel="stylesheet" />
 
-  <link href="{% static " css/styles.css" %}" rel="stylesheet">
+  <link href="{% static "css/styles.css" %}" rel="stylesheet">
 </head>
 
 <body>
@@ -286,23 +286,23 @@
 
         <div class="work-wall">
           <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="{% static " images/trading-podcast.jpg" %}"
+            <img loading="lazy" decoding="async" src="{% static "images/trading-podcast.jpg" %}"
               alt="Trading Podcast Thumbnail" />
           </article>
           <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="{% static " images/passive-income.jpg" %}"
+            <img loading="lazy" decoding="async" src="{% static "images/passive-income.jpg" %}"
               alt="Passive Income Thumbnail" />
           </article>
           <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="{% static " images/market-crash.jpg" %}"
+            <img loading="lazy" decoding="async" src="{% static "images/market-crash.jpg" %}"
               alt="Market Crash Thumbnail" />
           </article>
           <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="{% static " images/developer-roadmap.jpg" %}"
+            <img loading="lazy" decoding="async" src="{% static "images/developer-roadmap.jpg" %}"
               alt="Developer Roadmap Thumbnail" />
           </article>
           <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="{% static " images/uk-housing.jpg" %}"
+            <img loading="lazy" decoding="async" src="{% static "images/uk-housing.jpg" %}"
               alt="UK Housing Boom Thumbnail" />
           </article>
           <article class="work-card reveal">
@@ -699,7 +699,7 @@
           Message me with your channel link and video idea. I’ll help you turn it into a thumbnail that looks premium
           and gets attention fast.
         </p>
-        <form class="contact-form" id="contactForm" method="POST" action="{% url " contact" %}">
+        <form class="contact-form" id="contactForm" method="POST" action="{% url "contact" %}">
           {% csrf_token %}
           <input type="hidden" name="_subject" value="New Thumbnail Project Message - Devkota Design" />
           <input type="hidden" name="_captcha" value="false" />
@@ -761,7 +761,7 @@
   </footer>
 
 
-  <script src="{% static " js/script.js" %}"></script>
+  <script src="{% static "js/script.js" %}"></script>
 </body>
 
 </html>
