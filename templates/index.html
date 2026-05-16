@@ -5,14 +5,14 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Devkota Design | Premium YouTube Thumbnail Portfolio</title>
+  <title>{{ profile.name|default:"Devkota Design" }} | {{ profile.title|default:"Premium YouTube Thumbnail Portfolio" }}</title>
   <meta
-    content="Premium YouTube thumbnail design portfolio by Devkota Design. Scroll-stopping thumbnail visuals built for creators, brands, and channels."
+    content="Premium YouTube thumbnail design portfolio by {{ profile.name|default:"Devkota Design" }}. Scroll-stopping thumbnail visuals built for creators, brands, and channels."
     name="description" />
   <meta
-    content="YouTube thumbnail design, YouTube graphics, thumbnail designer, custom thumbnails, Devkota Design, high CTR thumbnails, YouTube branding"
+    content="YouTube thumbnail design, YouTube graphics, thumbnail designer, custom thumbnails, {{ profile.name|default:"Devkota Design" }}, high CTR thumbnails, YouTube branding"
     name="keywords" />
-  <meta content="Devkota Design" name="author" />
+  <meta content="{{ profile.name|default:"Devkota Design" }}" name="author" />
   <meta content="index, follow" name="robots" />
 
   <meta content="website" property="og:type" />
@@ -39,11 +39,11 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Prakash Devkota",
+        "name": "{{ profile.name|default:"Prakash Devkota" }}",
         "url": "https://devkotadesign.com/",
-        "jobTitle": "YouTube Thumbnail Designer",
-        "description": "I create high-impact YouTube thumbnails with strong hooks, bold composition, and a premium visual system built for serious creators.",
-        "sameAs": ["https://x.com/Prakashgfx99", "https://wa.me/8801600106114", "https://discord.com/users/1485473437676998729"]
+        "jobTitle": "{{ profile.title|default:"YouTube Thumbnail Designer" }}",
+        "description": "{{ profile.hero_description|default:"I create high-impact YouTube thumbnails with strong hooks, bold composition, and a premium visual system built for serious creators." }}",
+        "sameAs": ["{{ profile.twitter_url|default:"#" }}", "https://wa.me/{{ profile.whatsapp_number }}", "{{ profile.discord_url|default:"#" }}"]
       }
     </script>
 
@@ -79,8 +79,8 @@
   <!-- Mobile Topbar + Slide Panel -->
   <div class="mobile-topbar">
     <div class="mobile-topbar-brand">
-      <strong>Prakash Devkota</strong>
-      <span>Thumbnail Designer</span>
+      <strong>{{ profile.name|default:"Prakash Devkota" }}</strong>
+      <span>{{ profile.title|default:"Thumbnail Designer" }}</span>
     </div>
     <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-controls="mobileMenuOverlay"
       aria-expanded="false" type="button">
@@ -256,15 +256,14 @@
         <div class="hero-center-shield"></div>
       </div>
       <div class="hero-inner">
-        <div class="hero-kicker reveal">Premium Thumbnail Design</div>
+        <div class="hero-kicker reveal">{{ profile.hero_kicker|default:"Premium Thumbnail Design" }}</div>
         <h1 class="reveal">
-          Make Them
+          {{ profile.hero_title_line1|default:"Make Them" }}
           <br />
-          <span>Stop Scrolling.</span>
+          <span>{{ profile.hero_title_span|default:"Stop Scrolling." }}</span>
         </h1>
         <p class="reveal">
-          I create high-impact YouTube thumbnails with strong hooks, bold composition, and a premium visual system
-          built for serious creators.
+          {{ profile.hero_description|default:"I create high-impact YouTube thumbnails with strong hooks, bold composition, and a premium visual system built for serious creators." }}
         </p>
         <div class="hero-actions reveal">
           <a class="btn-main" href="#work">View Work</a>
@@ -285,90 +284,28 @@
         </div>
 
         <div class="work-wall">
-          <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="{% static "images/trading-podcast.jpg" %}"
-              alt="Trading Podcast Thumbnail" />
-          </article>
-          <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="{% static "images/passive-income.jpg" %}"
-              alt="Passive Income Thumbnail" />
-          </article>
-          <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="{% static "images/market-crash.jpg" %}"
-              alt="Market Crash Thumbnail" />
-          </article>
-          <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="{% static "images/developer-roadmap.jpg" %}"
-              alt="Developer Roadmap Thumbnail" />
-          </article>
-          <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="{% static "images/uk-housing.jpg" %}"
-              alt="UK Housing Boom Thumbnail" />
-          </article>
-          <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/6.avif"
-              alt="Podcast Thumbnail Design" />
-          </article>
-          <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/7.avif"
-              alt="Podcast Thumbnail Design" />
-          </article>
-          <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/8.avif"
-              alt="Podcast Thumbnail Design" />
-          </article>
-          <article class="work-card reveal">
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/9.avif"
-              alt="Podcast Thumbnail Design" />
-          </article>
-          <article class="work-card reveal image-slider">
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/1.webp"
-              alt="Gaming YouTube Thumbnail - Before and After After" />
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/1.webp"
-              alt="Gaming YouTube Thumbnail - Before and After Before" class="image-before" />
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
-            <div class="slider-handle"></div>
-          </article>
-          <article class="work-card reveal image-slider">
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/2.webp"
-              alt="Podcast Thumbnail - Before and After After" />
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/2.webp"
-              alt="Podcast Thumbnail - Before and After Before" class="image-before" />
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
-            <div class="slider-handle"></div>
-          </article>
-          <article class="work-card reveal image-slider">
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/3.webp"
-              alt="Gaming Thumbnail Portfolio - Before and After After" />
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/3.webp"
-              alt="Gaming Thumbnail Portfolio - Before and After Before" class="image-before" />
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
-            <div class="slider-handle"></div>
-          </article>
-          <article class="work-card reveal image-slider">
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/4.webp"
-              alt="Tech Review Thumbnail - Before and After After" />
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/4.webp"
-              alt="Tech Review Thumbnail - Before and After Before" class="image-before" />
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
-            <div class="slider-handle"></div>
-          </article>
-          <article class="work-card reveal image-slider">
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/5.webp"
-              alt="Business Thumbnail - Before and After After" />
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/5.webp"
-              alt="Business Thumbnail - Before and After Before" class="image-before" />
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
-            <div class="slider-handle"></div>
-          </article>
-          <article class="work-card reveal image-slider">
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/6.webp"
-              alt="Tech Thumbnail Design - Before and After After" />
-            <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/6.webp"
-              alt="Tech Thumbnail Design - Before and After Before" class="image-before" />
-            <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
-            <div class="slider-handle"></div>
-          </article>
+          {% for project in projects %}
+            {% if project.is_before_after %}
+            <article class="work-card reveal image-slider">
+              <img loading="lazy" decoding="async" src="{{ project.image.url }}"
+                alt="{{ project.title }} After" />
+              <img loading="lazy" decoding="async" src="{{ project.image_before.url }}"
+                alt="{{ project.title }} Before" class="image-before" />
+              <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
+              <div class="slider-handle"></div>
+            </article>
+            {% else %}
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="{{ project.image.url }}"
+                alt="{{ project.title }}" />
+            </article>
+            {% endif %}
+          {% empty %}
+            <!-- Fallback if no projects are uploaded yet -->
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="{% static "images/trading-podcast.jpg" %}" alt="Fallback" />
+            </article>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -379,162 +316,41 @@
       </div>
 
       <div class="reviews-grid">
-        <a class="review-card reveal" href="https://www.youtube.com/@JackPembrook" target="_blank"
+        {% for review in reviews %}
+        <a class="review-card reveal" href="{{ review.channel_link }}" target="_blank"
           rel="noopener noreferrer">
           <div class="review-content">
             <div class="review-stars">★★★★★</div>
             <p class="review-text">
-              "Prakash understood the style of my channel very quickly. I gave him a simple idea, and he turned it into
-              a thumbnail that felt clean, sharp, and professional. The final design looked clickable without being too
-              crowded, which is exactly what I needed."
+              "{{ review.review_text }}"
             </p>
             <div class="review-user">
               <img loading="lazy" decoding="async" class="review-avatar"
-                src="https://abdullahdesigns.xyz/reviews/jack.webp" alt="Jack Pembrook" onerror="
-                    this.src = 'https://ui-avatars.com/api/?name=Jack+Pembrook&amp;background=141417&amp;color=fff'
-                  " />
+                src="{% if review.avatar %}{{ review.avatar.url }}{% else %}https://ui-avatars.com/api/?name={{ review.client_name|urlencode }}&background=141417&color=fff{% endif %}" alt="{{ review.client_name }}" />
               <div class="review-info">
                 <h4>
-                  Jack Pembrook
+                  {{ review.client_name }}
+                  {% if review.is_verified %}
                   <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/reviews/verified-badge.png"
                     class="verified-badge" alt="Verified" />
+                  {% endif %}
                 </h4>
-                <span>YouTuber · 1.69M Subscribers</span>
+                <span>{{ review.sub_count }}</span>
               </div>
             </div>
           </div>
         </a>
-
-        <a class="review-card reveal reveal-delay-1" href="https://www.youtube.com/@SabriSubyOfficial" target="_blank"
-          rel="noopener noreferrer">
-          <div class="review-content">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">
-              "Honestly, I did not have to explain too much. Prakash understood the direction, improved the concept, and
-              delivered something that looked strong from the first version. The thumbnail had good contrast, clear
-              focus, and a premium feel. Really smooth experience."
-            </p>
-            <div class="review-user">
-              <img loading="lazy" decoding="async" class="review-avatar"
-                src="https://abdullahdesigns.xyz/reviews/sabri.webp" alt="Sabri Suby"
-                onerror="this.src = 'https://ui-avatars.com/api/?name=Sabri+Suby&amp;background=141417&amp;color=fff'" />
-              <div class="review-info">
-                <h4>
-                  Sabri Suby
-                  <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/reviews/verified-badge.png"
-                    class="verified-badge" alt="Verified" />
-                </h4>
-                <span>YouTuber · 450K Subscribers</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a class="review-card reveal reveal-delay-2" href="https://www.youtube.com/@techsource" target="_blank"
-          rel="noopener noreferrer">
-          <div class="review-content">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">
-              "Prakash created a polished and click-worthy thumbnail with great attention to detail. Everything was
-              clear instantly, and the process was smooth from start to finish."
-            </p>
-            <div class="review-user">
-              <img loading="lazy" decoding="async" class="review-avatar"
-                src="https://abdullahdesigns.xyz/reviews/techsource.webp" alt="TechSource"
-                onerror="this.src = 'https://ui-avatars.com/api/?name=TechSource&amp;background=141417&amp;color=fff'" />
-              <div class="review-info">
-                <h4>
-                  TechSource
-                  <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/reviews/verified-badge.png"
-                    class="verified-badge" alt="Verified" />
-                </h4>
-                <span>YouTuber · 4.1M Subscribers</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a class="review-card reveal" href="https://www.youtube.com/@LiamOttley/videos" target="_blank"
-          rel="noopener noreferrer">
-          <div class="review-content">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">
-              "Prakash took my rough idea and made it look way better than I expected. The design felt polished, bold,
-              and very clear. Communication was easy, and the final thumbnail looked like something that could actually
-              improve clicks."
-            </p>
-            <div class="review-user">
-              <img loading="lazy" decoding="async" class="review-avatar"
-                src="https://abdullahdesigns.xyz/reviews/Liam%20Ottley.jpg" alt="Liam Ottley" onerror="
-                    this.src = 'https://ui-avatars.com/api/?name=Liam+Ottley&amp;background=141417&amp;color=fff'
-                  " />
-              <div class="review-info">
-                <h4>
-                  Liam Ottley
-                  <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/reviews/verified-badge.png"
-                    class="verified-badge" alt="Verified" />
-                </h4>
-                <span>YouTuber · 780K Subscribers</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a class="review-card reveal reveal-delay-1" href="https://www.youtube.com/@Tdawgsmitty/videos" target="_blank"
-          rel="noopener noreferrer">
-          <div class="review-content">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">
-              "Prakash is a true professional. He knows how to make every design look realistic, clean, and high
-              quality. The final work always feels polished, and he is very easy to communicate and work with."
-            </p>
-            <div class="review-user">
-              <img loading="lazy" decoding="async" class="review-avatar"
-                src="https://abdullahdesigns.xyz/reviews/Tdawgsmitty.jpg" alt="Tdawgsmitty" onerror="
-                    this.src = 'https://ui-avatars.com/api/?name=Tdawgsmitty&amp;background=141417&amp;color=fff'
-                  " />
-              <div class="review-info">
-                <h4>
-                  Tdawgsmitty
-                  <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/reviews/verified-badge.png"
-                    class="verified-badge" alt="Verified" />
-                </h4>
-                <span>YouTuber · 597K Subscribers</span>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a class="review-card reveal" href="https://www.youtube.com/@vfxsolazzo" target="_blank"
-          rel="noopener noreferrer">
-          <div class="review-content">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">
-              "I liked how fast Prakash understood the vibe I wanted. The thumbnail was not overdone, but it still stood
-              out. Colors, spacing, and focus were handled really nicely."
-            </p>
-            <div class="review-user">
-              <img loading="lazy" decoding="async" class="review-avatar"
-                src="https://abdullahdesigns.xyz/reviews/solazzo.webp" alt="Solazzo"
-                onerror="this.src = 'https://ui-avatars.com/api/?name=Solazzo&amp;background=141417&amp;color=fff'" />
-              <div class="review-info">
-                <h4>Solazzo</h4>
-                <span>YouTuber · 12.2K Subscribers</span>
-              </div>
-            </div>
-          </div>
-        </a>
+        {% endfor %}
       </div>
     </section>
 
     <section class="about-section container" id="about">
       <div class="about-grid reveal">
         <div class="about-content">
-          <h2>Turn Scrollers Into Viewers.
-          </h2>
+          <h2>{{ profile.about_title|default:"Turn Scrollers Into Viewers." }}</h2>
           <div class="about-text">
             <p>
-               I design high-converting YouTube thumbnails that capture attention, spark curiosity, and drive clicks. Let’s stop losing your audience to the feed and start 
+               {{ profile.about_text|default:"I design high-converting YouTube thumbnails that capture attention, spark curiosity, and drive clicks. Let’s stop losing your audience to the feed and start" }}
             </p>
           </div>
           <ul class="about-points">
@@ -634,14 +450,14 @@
     <section class="section-pad container solve-section" id="solve">
       <div class="cta-card reveal">
         <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-          <h2 style="font-size: 2.5rem;">What I Can <span>Solve For You</span></h2>
+          <h2 style="font-size: 2.5rem;">{{ profile.solve_title|default:"What I Can Solve For You" }}</h2>
         </div>
         <div class="about-text" style="max-width: 800px;">
           <p style="font-size: 1.2rem; line-height: 1.6; opacity: 0.9; margin-bottom: 1.5rem;">
-            I am a professional thumbnail strategist with over a year of experience. I specialize in boosting your channel's CTR and views by creating high-impact visuals that grab attention instantly.
+            {{ profile.solve_text_1|default:"I am a professional thumbnail strategist with over a year of experience. I specialize in boosting your channel's CTR and views by creating high-impact visuals that grab attention instantly." }}
           </p>
           <p style="font-size: 1.2rem; line-height: 1.6; opacity: 0.9; margin-bottom: 1.5rem;">
-            My designs ensure <strong>maximum mobile readability</strong> and clarity, helping you deliver the high performance and professional look your channel deserves.
+            {{ profile.solve_text_2|default:"My designs ensure maximum mobile readability and clarity, helping you deliver the high performance and professional look your channel deserves." }}
           </p>
         </div>
         <div class="hero-actions" style="margin-top: 2rem;">
@@ -656,54 +472,19 @@
         <p>Everything you need to know about working with me.</p>
       </div>
       <div class="faq-list reveal">
+        {% for faq in faqs %}
         <div class="faq-item">
           <button class="faq-trigger">
-            How fast can I get a thumbnail?
+            {{ faq.question }}
             <span>+</span>
           </button>
           <div class="faq-content">
             <div>
-              Most thumbnails are delivered within 24–48 hours. If the design is very detailed or needs extra
-              research, I’ll let you know before starting.
+              {{ faq.answer }}
             </div>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-trigger">
-            What do you need from me to start?
-            <span>+</span>
-          </button>
-          <div class="faq-content">
-            <div>
-              Send your video title, a short idea or script, your channel link, and any photos or references you want
-              me to use. Even a rough concept is enough.
-            </div>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-trigger">
-            Can you match my current thumbnail style?
-            <span>+</span>
-          </button>
-          <div class="faq-content">
-            <div>
-              Yes. I can follow your current brand style, improve it slightly, or create a fresh direction that still
-              feels natural for your channel.
-            </div>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-trigger">
-            Do you provide revisions if I need changes?
-            <span>+</span>
-          </button>
-          <div class="faq-content">
-            <div>
-              Yes. Small changes like text, color, layout, or image adjustments are included so the final thumbnail
-              feels ready before you upload.
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </section>
 
@@ -770,9 +551,9 @@
     <span>
       ©
       <span id="year"></span>
-      Devkota Design
+      {{ profile.name|default:"Devkota Design" }}
     </span>
-    <span>Premium YouTube Thumbnail Design</span>
+    <span>{{ profile.title|default:"Premium YouTube Thumbnail Design" }}</span>
   </footer>
 
 
