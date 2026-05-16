@@ -542,6 +542,13 @@ body.mobile-menu-open {
 
 .hero-inner {
   width: min(820px, 100%) !important;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5rem;
 }
 
 .hero-kicker {
@@ -551,6 +558,8 @@ body.mobile-menu-open {
   gap: 0.65rem;
   padding: 0.8rem 1.15rem;
   margin-bottom: 1.4rem !important;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.045) !important;
@@ -606,8 +615,11 @@ body.mobile-menu-open {
 .hero-actions {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .btn-main,
@@ -1711,7 +1723,10 @@ footer {
     min-height: auto !important;
     padding: 7.4rem 0 3.7rem !important;
   }
-  .hero-inner { width: min(100%, 430px) !important; }
+  .hero-inner {
+    width: min(100%, 430px) !important;
+    padding: 0 0.5rem;
+  }
 
   .hero-kicker {
     font-size: 0.66rem !important;
@@ -1734,7 +1749,18 @@ footer {
     margin-bottom: 1.75rem !important;
   }
 
-  .hero-actions { gap: 0.75rem !important; }
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.75rem !important;
+    width: 100%;
+    align-items: stretch;
+  }
+  .hero-actions .btn-main,
+  .hero-actions .btn-secondary {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
 
   .hero-actions .btn-main,
   .hero-actions .btn-secondary {
