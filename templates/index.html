@@ -1,37 +1,63 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en" class="premium-smooth-scroll">
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Aayush | Premium Web Design & Development Portfolio</title>
-    <meta content="Premium web design and development portfolio by Aayush. Modern websites built for conversion, crafted with premium UX." name="description">
-    <meta content="web design, web development, UI/UX design, portfolio, developer, Next.js, React, Tailwind CSS" name="keywords">
-    <meta content="Aayush" name="author">
-    <meta content="index, follow" name="robots">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Devkota Design | Premium YouTube Thumbnail Portfolio</title>
+    <meta
+      content="Premium YouTube thumbnail design portfolio by Devkota Design. Scroll-stopping thumbnail visuals built for creators, brands, and channels."
+      name="description"
+    />
+    <meta
+      content="YouTube thumbnail design, YouTube graphics, thumbnail designer, custom thumbnails, Devkota Design, high CTR thumbnails, YouTube branding"
+      name="keywords"
+    />
+    <meta content="Devkota Design" name="author" />
+    <meta content="index, follow" name="robots" />
 
-    <meta content="website" property="og:type">
-    <meta content="https://aayush.dev/" property="og:url">
-    <meta content="Aayush | Premium Web Design & Development Portfolio" property="og:title">
-    <meta content="Premium web design and development portfolio by Aayush. Modern websites built for conversion." property="og:description">
+    <meta content="website" property="og:type" />
+    <meta content="https://devkotadesign.com/" property="og:url" />
+    <meta content="Devkota Design | Premium YouTube Thumbnail Portfolio" property="og:title" />
+    <meta
+      content="Premium YouTube thumbnail design portfolio by Devkota Design. Scroll-stopping thumbnail visuals built for creators, brands, and channels."
+      property="og:description"
+    />
+    <meta content="favicon/Logo.png" property="og:image" />
 
-    <link href="favicon.png" rel="icon" type="image/png">
-    <link href="favicon.png" rel="apple-touch-icon">
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="https://devkotadesign.com/" name="twitter:url" />
+    <meta content="Devkota Design | Premium YouTube Thumbnail Portfolio" property="og:title" />
+    <meta
+      content="Premium YouTube thumbnail design portfolio by Devkota Design. Scroll-stopping thumbnail visuals built for creators, brands, and channels."
+      name="twitter:description"
+    />
+    <meta content="favicon/Logo.png" name="twitter:image" />
+    <meta content="@Prakashgfx99" name="twitter:site" />
+
+    <link href="favicon/Logo.png" rel="icon" type="image/png" />
+    <link href="favicon/Logo.png" rel="apple-touch-icon" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Aayush",
-        "url": "https://aayush.dev/",
-        "jobTitle": "Web Designer & Developer",
-        "description": "I create modern, high-converting websites with premium design and powerful functionality built for serious businesses."
+        "name": "Prakash Devkota",
+        "url": "https://devkotadesign.com/",
+        "jobTitle": "YouTube Thumbnail Designer",
+        "description": "I create high-impact YouTube thumbnails with strong hooks, bold composition, and a premium visual system built for serious creators.",
+        "sameAs": ["https://x.com/Prakashgfx99", "https://wa.me/8801600106114", "https://discord.com/users/1485473437676998729"]
       }
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
-  </head>
-  <body class="premium-smooth-scroll-ready">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    
+  <link href="{% static "css/styles.css" %}" rel="stylesheet">
+</head>
+  <body>
     <div class="site-ambient" aria-hidden="true">
       <div class="site-grid"></div>
       <div class="site-orb orb-a"></div>
@@ -42,25 +68,32 @@
     </div>
     <div class="noise"></div>
     <div class="scroll-progress" id="scrollProgress"></div>
-    <div class="cursor-glow" id="cursorGlow"></div>
-    <div class="custom-cursor" id="customCursor"></div>
 
     <nav aria-label="Main navigation" id="mainNav">
       <div class="nav-highlight"></div>
       <a class="active" href="#home">Home</a>
       <a href="#work">Work</a>
       <a href="#reviews">Reviews</a>
-      <a href="#skills">Skills</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <div class="mobile-topbar" aria-hidden="true">
+    <!-- Mobile Topbar + Slide Panel -->
+    <div class="mobile-topbar">
       <div class="mobile-topbar-brand">
-        <strong>Aayush</strong>
-        <span>Web Designer & Developer</span>
+        <strong>Prakash Devkota</strong>
+        <span>Thumbnail Designer</span>
       </div>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-controls="mobileMenuOverlay" aria-expanded="false" type="button">
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Open menu"
+        aria-controls="mobileMenuOverlay"
+        aria-expanded="false"
+        type="button"
+      >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
           <line x1="4" y1="7" x2="20" y2="7"></line>
           <line x1="4" y1="12" x2="20" y2="12"></line>
@@ -83,8 +116,9 @@
           <a href="#home">Home</a>
           <a href="#work">Work</a>
           <a href="#reviews">Reviews</a>
-          <a href="#skills">Skills</a>
-          <a href="#pricing">Pricing</a>
+          <a href="#about">About</a>
+          <a href="#process">Process</a>
+          <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -92,371 +126,500 @@
 
     <main>
       <section class="hero container" id="home">
+        <div class="hero-vertical-stage" aria-hidden="true">
+          <div class="hero-ribbon hero-ribbon-a hero-ribbon-down">
+            <div class="hero-ribbon-track">
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/9.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/8.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/7.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/1.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/3.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/5.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/2.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/4.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/6.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/1.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/3.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/5.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/2.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/4.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/6.avif" alt="" /></div>
+            </div>
+          </div>
+          <div class="hero-ribbon hero-ribbon-b hero-ribbon-up">
+            <div class="hero-ribbon-track">
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/9.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/8.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/7.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/2.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/6.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/4.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/1.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/5.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/3.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/2.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/6.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/4.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/1.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/5.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/3.avif" alt="" /></div>
+            </div>
+          </div>
+          <div class="hero-ribbon hero-ribbon-c hero-ribbon-down">
+            <div class="hero-ribbon-track">
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/9.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/8.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/7.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/5.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/1.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/3.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/6.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/2.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/4.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/5.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/1.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/3.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/6.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/2.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/4.avif" alt="" /></div>
+            </div>
+          </div>
+          <div class="hero-ribbon hero-ribbon-d hero-ribbon-up">
+            <div class="hero-ribbon-track">
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/9.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/8.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/7.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/6.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/4.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/2.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/5.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/3.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/1.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/6.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/4.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/2.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/5.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/3.avif" alt="" /></div>
+              <div class="hero-flow-thumb"><img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/1.avif" alt="" /></div>
+            </div>
+          </div>
+          <div class="hero-center-shield"></div>
+        </div>
         <div class="hero-inner">
-          <div class="hero-kicker reveal active">Premium Web Design</div>
-          <h1 class="reveal active">
-            Websites That
-            <br>
-            <span>Convert & Inspire.</span>
+          <div class="hero-kicker reveal">Premium Thumbnail Design</div>
+          <h1 class="reveal">
+            Make Them
+            <br />
+            <span>Stop Scrolling.</span>
           </h1>
-          <p class="reveal active">
-            I create premium web experiences that blend stunning design with powerful functionality. Built for modern businesses that demand excellence.
+          <p class="reveal">
+            I create high-impact YouTube thumbnails with strong hooks, bold composition, and a premium visual system
+            built for serious creators.
           </p>
-          <div class="hero-actions reveal active">
+          <div class="hero-actions reveal">
             <a class="btn-main" href="#work">View Work</a>
-            <a class="btn-secondary" href="#contact">Start a Project</a>
+            <a class="btn-secondary" href="#contact">Book a Project</a>
           </div>
         </div>
       </section>
 
       <section class="work-section" id="work">
         <div class="container">
-          <div class="work-top reveal active">
+          <div class="work-top reveal">
             <div class="work-title">
               <h2>
                 Featured
-                <span>Projects</span>
+                <span>Thumbnails</span>
               </h2>
             </div>
           </div>
 
           <div class="work-wall">
-            <article class="work-card reveal" style="transition-delay: 0ms;">
-              <img src="{% static 'images/ecommerce-project.png' %}" alt="E-Commerce Platform Project">
-              <div class="work-card-details">
-                <div class="work-card-category">E-Commerce</div>
-                <div class="work-card-title">Online Store Platform</div>
-                <div class="work-card-tech">
-                  <span class="tech-badge">Next.js</span>
-                  <span class="tech-badge">Tailwind</span>
-                  <span class="tech-badge">Stripe</span>
-                </div>
-                <div class="work-card-buttons">
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
-                </div>
-              </div>
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/1.avif" alt="Business YouTube Thumbnail" />
             </article>
-            <article class="work-card reveal" style="transition-delay: 70ms;">
-              <img src="https://via.placeholder.com/600x400?text=SaaS+Dashboard" alt="SaaS Dashboard Project">
-              <div class="work-card-details">
-                <div class="work-card-category">SaaS</div>
-                <div class="work-card-title">Analytics Dashboard</div>
-                <div class="work-card-tech">
-                  <span class="tech-badge">React</span>
-                  <span class="tech-badge">Node.js</span>
-                  <span class="tech-badge">MongoDB</span>
-                </div>
-                <div class="work-card-buttons">
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
-                </div>
-              </div>
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/2.avif" alt="Tech YouTube Thumbnail" />
             </article>
-            <article class="work-card reveal" style="transition-delay: 140ms;">
-              <img src="https://via.placeholder.com/600x400?text=Agency+Website" alt="Agency Website Project">
-              <div class="work-card-details">
-                <div class="work-card-category">Website</div>
-                <div class="work-card-title">Agency Branding</div>
-                <div class="work-card-tech">
-                  <span class="tech-badge">Next.js</span>
-                  <span class="tech-badge">Framer</span>
-                  <span class="tech-badge">CMS</span>
-                </div>
-                <div class="work-card-buttons">
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
-                </div>
-              </div>
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/3.avif" alt="Financial Business Thumbnail" />
             </article>
-            <article class="work-card reveal" style="transition-delay: 210ms;">
-              <img src="https://via.placeholder.com/600x400?text=Mobile+App" alt="Mobile App Project">
-              <div class="work-card-details">
-                <div class="work-card-category">Mobile</div>
-                <div class="work-card-title">Fitness Tracking App</div>
-                <div class="work-card-tech">
-                  <span class="tech-badge">React Native</span>
-                  <span class="tech-badge">Firebase</span>
-                  <span class="tech-badge">Expo</span>
-                </div>
-                <div class="work-card-buttons">
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
-                </div>
-              </div>
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/4.avif" alt="Expert Podcast Thumbnail" />
             </article>
-            <article class="work-card reveal" style="transition-delay: 280ms;">
-              <img src="https://via.placeholder.com/600x400?text=Brand+Identity" alt="Brand Identity Project">
-              <div class="work-card-details">
-                <div class="work-card-category">Branding</div>
-                <div class="work-card-title">Visual Identity System</div>
-                <div class="work-card-tech">
-                  <span class="tech-badge">Design</span>
-                  <span class="tech-badge">Figma</span>
-                  <span class="tech-badge">UI/UX</span>
-                </div>
-                <div class="work-card-buttons">
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
-                </div>
-              </div>
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/5.avif" alt="Gaming Thumbnail Illustration" />
             </article>
-            <article class="work-card reveal" style="transition-delay: 350ms;">
-              <img src="https://via.placeholder.com/600x400?text=Content+Platform" alt="Content Platform Project">
-              <div class="work-card-details">
-                <div class="work-card-category">CMS</div>
-                <div class="work-card-title">Content Management</div>
-                <div class="work-card-tech">
-                  <span class="tech-badge">Headless CMS</span>
-                  <span class="tech-badge">GraphQL</span>
-                  <span class="tech-badge">Next.js</span>
-                </div>
-                <div class="work-card-buttons">
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Live →</a>
-                  <a class="work-card-btn" href="#" target="_blank" rel="noopener">Code</a>
-                </div>
-              </div>
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/6.avif" alt="Podcast Thumbnail Design" />
             </article>
-          </div>
-
-          <div class="proof-row reveal">
-            <div class="proof-card">
-              <strong><span class="count" data-target="80">0</span>+</strong>
-              <span>Projects</span>
-            </div>
-            <div class="proof-card">
-              <strong><span class="count" data-target="60">0</span>+</strong>
-              <span>Happy Clients</span>
-            </div>
-            <div class="proof-card">
-              <strong><span class="count" data-target="250">0</span>M+</strong>
-              <span>Total Visitors</span>
-            </div>
-            <div class="proof-card">
-              <strong><span class="count" data-target="98">0</span>%</strong>
-              <span>Satisfaction</span>
-            </div>
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/7.avif" alt="Podcast Thumbnail Design" />
+            </article>
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/8.avif" alt="Podcast Thumbnail Design" />
+            </article>
+            <article class="work-card reveal">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/thumbnails/9.avif" alt="Podcast Thumbnail Design" />
+            </article>
+            <article class="work-card reveal image-slider">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/1.webp" alt="Gaming YouTube Thumbnail - Before and After After" />
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/1.webp" alt="Gaming YouTube Thumbnail - Before and After Before" class="image-before" />
+              <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
+              <div class="slider-handle"></div>
+            </article>
+            <article class="work-card reveal image-slider">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/2.webp" alt="Podcast Thumbnail - Before and After After" />
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/2.webp" alt="Podcast Thumbnail - Before and After Before" class="image-before" />
+              <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
+              <div class="slider-handle"></div>
+            </article>
+            <article class="work-card reveal image-slider">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/3.webp" alt="Gaming Thumbnail Portfolio - Before and After After" />
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/3.webp" alt="Gaming Thumbnail Portfolio - Before and After Before" class="image-before" />
+              <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
+              <div class="slider-handle"></div>
+            </article>
+            <article class="work-card reveal image-slider">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/4.webp" alt="Tech Review Thumbnail - Before and After After" />
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/4.webp" alt="Tech Review Thumbnail - Before and After Before" class="image-before" />
+              <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
+              <div class="slider-handle"></div>
+            </article>
+            <article class="work-card reveal image-slider">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/5.webp" alt="Business Thumbnail - Before and After After" />
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/5.webp" alt="Business Thumbnail - Before and After Before" class="image-before" />
+              <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
+              <div class="slider-handle"></div>
+            </article>
+            <article class="work-card reveal image-slider">
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/after/6.webp" alt="Tech Thumbnail Design - Before and After After" />
+              <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/before/6.webp" alt="Tech Thumbnail Design - Before and After Before" class="image-before" />
+              <input type="range" min="0" max="100" value="50" class="slider-range" aria-label="Before/After Slider" />
+              <div class="slider-handle"></div>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="section-pad container reviews-section" id="reviews">
         <div class="section-header reveal">
-          <h2>Trusted by Industry Leaders</h2>
+          <h2>Trusted by Creators</h2>
         </div>
 
         <div class="reviews-grid">
-          <a class="review-card reveal" href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            class="review-card reveal"
+            href="https://www.youtube.com/@JackPembrook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div class="review-content">
               <div class="review-stars">★★★★★</div>
               <p class="review-text">
-                "Aayush delivered an exceptional website that perfectly captures our brand. The design is modern, the performance is incredible, and the user experience is outstanding. Highly recommended!"
+                "Prakash understood the style of my channel very quickly. I gave him a simple idea, and he turned it into a thumbnail that felt clean, sharp, and professional. The final design looked clickable without being too crowded, which is exactly what I needed."
               </p>
               <div class="review-user">
-                <div class="review-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                <img loading="lazy" decoding="async"
+                  class="review-avatar"
+                  src="https://abdullahdesigns.xyz/reviews/jack.webp"
+                  alt="Jack Pembrook"
+                  onerror="
+                    this.src = 'https://ui-avatars.com/api/?name=Jack+Pembrook&amp;background=141417&amp;color=fff'
+                  "
+                />
                 <div class="review-info">
-                  <h4>Sarah Johnson</h4>
-                  <span>CEO, TechStart Inc</span>
+                  <h4>
+                    Jack Pembrook
+                    <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/reviews/verified-badge.png" class="verified-badge" alt="Verified" />
+                  </h4>
+                  <span>YouTuber · 1.69M Subscribers</span>
                 </div>
               </div>
             </div>
           </a>
 
-          <a class="review-card reveal reveal-delay-1" href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            class="review-card reveal reveal-delay-1"
+            href="https://www.youtube.com/@SabriSubyOfficial"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div class="review-content">
               <div class="review-stars">★★★★★</div>
               <p class="review-text">
-                "Working with Aayush was seamless. The website not only looks amazing but has increased our conversions by 45%. Professional, creative, and delivers on time!"
+                "Honestly, I did not have to explain too much. Prakash understood the direction, improved the concept, and delivered something that looked strong from the first version. The thumbnail had good contrast, clear focus, and a premium feel. Really smooth experience."
               </p>
               <div class="review-user">
-                <div class="review-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                <img loading="lazy" decoding="async"
+                  class="review-avatar"
+                  src="https://abdullahdesigns.xyz/reviews/sabri.webp"
+                  alt="Sabri Suby"
+                  onerror="this.src = 'https://ui-avatars.com/api/?name=Sabri+Suby&amp;background=141417&amp;color=fff'"
+                />
                 <div class="review-info">
-                  <h4>Michael Chen</h4>
-                  <span>Founder, Digital Hub</span>
+                  <h4>
+                    Sabri Suby
+                    <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/reviews/verified-badge.png" class="verified-badge" alt="Verified" />
+                  </h4>
+                  <span>YouTuber · 450K Subscribers</span>
                 </div>
               </div>
             </div>
           </a>
 
-          <a class="review-card reveal reveal-delay-2" href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            class="review-card reveal reveal-delay-2"
+            href="https://www.youtube.com/@techsource"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div class="review-content">
               <div class="review-stars">★★★★★</div>
               <p class="review-text">
-                "The best designer I've worked with. Aayush understood our vision instantly and executed it perfectly. The attention to detail is remarkable. Will definitely work together again!"
+                "Prakash created a polished and click-worthy thumbnail with great attention to detail. Everything was clear instantly, and the process was smooth from start to finish."
               </p>
               <div class="review-user">
-                <div class="review-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                <img loading="lazy" decoding="async"
+                  class="review-avatar"
+                  src="https://abdullahdesigns.xyz/reviews/techsource.webp"
+                  alt="TechSource"
+                  onerror="this.src = 'https://ui-avatars.com/api/?name=TechSource&amp;background=141417&amp;color=fff'"
+                />
                 <div class="review-info">
-                  <h4>Emma Davis</h4>
-                  <span>Marketing Director</span>
+                  <h4>
+                    TechSource
+                    <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/reviews/verified-badge.png" class="verified-badge" alt="Verified" />
+                  </h4>
+                  <span>YouTuber · 4.1M Subscribers</span>
                 </div>
               </div>
             </div>
           </a>
-        </div>
-      </section>
 
-      <section class="section-pad container skills-section" id="skills">
-        <div class="section-header reveal">
-          <h2>Technical Expertise</h2>
-          <p>Proficient in modern web technologies and frameworks that power premium digital experiences.</p>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <div class="skill-item reveal">
-              <div class="skill-label">
-                <h4>React.js</h4>
-                <span class="skill-percent">95%</span>
-              </div>
-              <div class="skill-bar" style="--skill-percent: 95%;">
-                <div class="skill-bar-fill"></div>
-              </div>
-            </div>
-            <div class="skill-item reveal reveal-delay-1">
-              <div class="skill-label">
-                <h4>Next.js</h4>
-                <span class="skill-percent">92%</span>
-              </div>
-              <div class="skill-bar" style="--skill-percent: 92%;">
-                <div class="skill-bar-fill"></div>
-              </div>
-            </div>
-            <div class="skill-item reveal reveal-delay-2">
-              <div class="skill-label">
-                <h4>Node.js</h4>
-                <span class="skill-percent">88%</span>
-              </div>
-              <div class="skill-bar" style="--skill-percent: 88%;">
-                <div class="skill-bar-fill"></div>
+          <a
+            class="review-card reveal"
+            href="https://www.youtube.com/@LiamOttley/videos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="review-content">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Prakash took my rough idea and made it look way better than I expected. The design felt polished, bold, and very clear. Communication was easy, and the final thumbnail looked like something that could actually improve clicks."
+              </p>
+              <div class="review-user">
+                <img loading="lazy" decoding="async"
+                  class="review-avatar"
+                  src="https://abdullahdesigns.xyz/reviews/Liam%20Ottley.jpg"
+                  alt="Liam Ottley"
+                  onerror="
+                    this.src = 'https://ui-avatars.com/api/?name=Liam+Ottley&amp;background=141417&amp;color=fff'
+                  "
+                />
+                <div class="review-info">
+                  <h4>
+                    Liam Ottley
+                    <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/reviews/verified-badge.png" class="verified-badge" alt="Verified" />
+                  </h4>
+                  <span>YouTuber · 780K Subscribers</span>
+                </div>
               </div>
             </div>
-            <div class="skill-item reveal reveal-delay-3">
-              <div class="skill-label">
-                <h4>Tailwind CSS</h4>
-                <span class="skill-percent">96%</span>
-              </div>
-              <div class="skill-bar" style="--skill-percent: 96%;">
-                <div class="skill-bar-fill"></div>
-              </div>
-            </div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-item reveal">
-              <div class="skill-label">
-                <h4>MongoDB</h4>
-                <span class="skill-percent">85%</span>
-              </div>
-              <div class="skill-bar" style="--skill-percent: 85%;">
-                <div class="skill-bar-fill"></div>
-              </div>
-            </div>
-            <div class="skill-item reveal reveal-delay-1">
-              <div class="skill-label">
-                <h4>UI/UX Design</h4>
-                <span class="skill-percent">90%</span>
-              </div>
-              <div class="skill-bar" style="--skill-percent: 90%;">
-                <div class="skill-bar-fill"></div>
-              </div>
-            </div>
-            <div class="skill-item reveal reveal-delay-2">
-              <div class="skill-label">
-                <h4>WordPress</h4>
-                <span class="skill-percent">82%</span>
-              </div>
-              <div class="skill-bar" style="--skill-percent: 82%;">
-                <div class="skill-bar-fill"></div>
+          </a>
+
+          <a
+            class="review-card reveal reveal-delay-1"
+            href="https://www.youtube.com/@Tdawgsmitty/videos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="review-content">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Prakash is a true professional. He knows how to make every design look realistic, clean, and high quality. The final work always feels polished, and he is very easy to communicate and work with."
+              </p>
+              <div class="review-user">
+                <img loading="lazy" decoding="async"
+                  class="review-avatar"
+                  src="https://abdullahdesigns.xyz/reviews/Tdawgsmitty.jpg"
+                  alt="Tdawgsmitty"
+                  onerror="
+                    this.src = 'https://ui-avatars.com/api/?name=Tdawgsmitty&amp;background=141417&amp;color=fff'
+                  "
+                />
+                <div class="review-info">
+                  <h4>
+                    Tdawgsmitty
+                    <img loading="lazy" decoding="async" src="https://abdullahdesigns.xyz/reviews/verified-badge.png" class="verified-badge" alt="Verified" />
+                  </h4>
+                  <span>YouTuber · 597K Subscribers</span>
+                </div>
               </div>
             </div>
-            <div class="skill-item reveal reveal-delay-3">
-              <div class="skill-label">
-                <h4>Shopify</h4>
-                <span class="skill-percent">87%</span>
-              </div>
-              <div class="skill-bar" style="--skill-percent: 87%;">
-                <div class="skill-bar-fill"></div>
+          </a>
+
+          <a
+            class="review-card reveal"
+            href="https://www.youtube.com/@vfxsolazzo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="review-content">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "I liked how fast Prakash understood the vibe I wanted. The thumbnail was not overdone, but it still stood out. Colors, spacing, and focus were handled really nicely."
+              </p>
+              <div class="review-user">
+                <img loading="lazy" decoding="async"
+                  class="review-avatar"
+                  src="https://abdullahdesigns.xyz/reviews/solazzo.webp"
+                  alt="Solazzo"
+                  onerror="this.src = 'https://ui-avatars.com/api/?name=Solazzo&amp;background=141417&amp;color=fff'"
+                />
+                <div class="review-info">
+                  <h4>Solazzo</h4>
+                  <span>YouTuber · 12.2K Subscribers</span>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
       <section class="about-section container" id="about">
         <div class="about-grid reveal">
           <div class="about-content">
-            <h2>Crafting Digital Excellence</h2>
+            <h2>Elevate Your Channel's Visual Identity</h2>
             <div class="about-text">
               <p>
-                I specialize in creating modern web experiences that drive business growth. With 5+ years of experience in web design and development, I've helped 60+ businesses establish a powerful online presence.
+                 I design thumbnails with a clear focus on emotion, clarity, and CTR. My goal is not just to make your videos look good, but to create the first visual hook that makes viewers stop, feel curious, and click.
               </p>
             </div>
             <ul class="about-points">
-              <li>Expert in React, Next.js & Tailwind CSS</li>
-              <li>Premium UI/UX design focused on conversion</li>
-              <li>Fast, secure, and SEO-optimized websites</li>
+              <li>Generated 150M+ impressions for clients</li>
+              <li>Proven CTR increases across diverse niches</li>
+              <li>20+ satisfied creators worldwide</li>
             </ul>
             <div class="about-actions">
-              <a class="guide-btn" href="#contact">Let's Work Together</a>
+              <a class="guide-btn" href="#contact">Contact Me for Details</a>
               <div class="about-rating">
                 <strong>★★★★★</strong>
-                <span>Trusted by 60+ Clients</span>
+                <span>Trusted by 20+ Creators</span>
               </div>
             </div>
           </div>
           <div class="about-visual">
             <div class="about-image-wrapper">
-              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem;">👨‍💻</div>
+              <img loading="lazy" decoding="async"
+                src="https://abdullahdesigns.xyz/profile/1.avif"
+                alt="Prakash Devkota - Professional Thumbnail Designer"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'profile/1.jpg';
+                "
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-pad container process-section" id="services">
+      <section class="section-pad container process-section" id="process">
         <div class="section-header reveal">
-          <h2>My Service Process</h2>
+          <h2>A Strategic Design Process</h2>
         </div>
         <div class="process-grid">
           <article class="process-card reveal">
             <div class="process-media">
-              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">🎯</div>
+              <img loading="lazy" decoding="async"
+                src="https://abdullahdesigns.xyz/Process/1.avif"
+                alt="Strategy Consultation"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'Process/1.jpg';
+                "
+              />
             </div>
             <div class="process-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <polygon points="23 7 16 12 23 17 23 7"></polygon>
                 <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
               </svg>
             </div>
-            <h3>Discovery & Strategy</h3>
-            <p>We discuss your business goals, target audience, and vision to create a strategic roadmap for your website.</p>
+            <h3>Consulting</h3>
+            <p>
+              We discuss your video goals, audience strategy, and packaging to ensure the thumbnail aligns with your
+              content.
+            </p>
           </article>
 
           <article class="process-card reveal reveal-delay-1">
             <div class="process-media">
-              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">🎨</div>
+              <img loading="lazy" decoding="async"
+                src="https://abdullahdesigns.xyz/Process/2.avif"
+                alt="Conceptualization"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'Process/2.jpg';
+                "
+              />
             </div>
             <div class="process-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
               </svg>
             </div>
-            <h3>Design & Development</h3>
-            <p>I create stunning designs with cutting-edge technology, focusing on both aesthetics and performance.</p>
+            <h3>Strategic Ideation</h3>
+            <p>I develop conceptual briefings and sketches, focusing on the visual hook that will stop the scroll.</p>
           </article>
 
           <article class="process-card reveal reveal-delay-2">
             <div class="process-media">
-              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem;">✅</div>
+              <img loading="lazy" decoding="async"
+                src="https://abdullahdesigns.xyz/Process/3.avif"
+                alt="Final Design Production"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'Process/3.jpg';
+                "
+              />
             </div>
             <div class="process-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                 <circle cx="8.5" cy="8.5" r="1.5"></circle>
                 <polyline points="21 15 16 10 5 21"></polyline>
               </svg>
             </div>
-            <h3>Launch & Support</h3>
-            <p>Your website goes live with full optimization. I provide ongoing support to ensure everything runs smoothly.</p>
+            <h3>Creative Design</h3>
+            <p>
+              The final thumbnail is crafted with precision, ensuring high contrast, readability, and a premium look.
+            </p>
           </article>
         </div>
       </section>
@@ -464,162 +627,125 @@
       <section class="section-pad container faq-section" id="faq">
         <div class="section-header reveal">
           <h2>Common Questions</h2>
+          <p>Everything you need to know about working with me.</p>
         </div>
         <div class="faq-list reveal">
           <div class="faq-item">
             <button class="faq-trigger">
-              What's your typical project timeline?
+              How fast can I get a thumbnail?
               <span>+</span>
             </button>
             <div class="faq-content">
               <div>
-                Most projects take 4-12 weeks depending on complexity. I provide a detailed timeline during our initial consultation.
+                Most thumbnails are delivered within 24–48 hours. If the design is very detailed or needs extra
+                research, I’ll let you know before starting.
               </div>
             </div>
           </div>
           <div class="faq-item">
             <button class="faq-trigger">
-              Do you provide hosting and maintenance?
+              What do you need from me to start?
               <span>+</span>
             </button>
             <div class="faq-content">
               <div>
-                I can recommend hosting providers and help with initial setup. I also offer ongoing maintenance and support packages.
+                Send your video title, a short idea or script, your channel link, and any photos or references you want
+                me to use. Even a rough concept is enough.
               </div>
             </div>
           </div>
           <div class="faq-item">
             <button class="faq-trigger">
-              Will my website be mobile-friendly?
+              Can you match my current thumbnail style?
               <span>+</span>
             </button>
             <div class="faq-content">
               <div>
-                Absolutely. All websites I create are fully responsive and optimized for mobile, tablet, and desktop devices.
+                Yes. I can follow your current brand style, improve it slightly, or create a fresh direction that still
+                feels natural for your channel.
               </div>
             </div>
           </div>
           <div class="faq-item">
             <button class="faq-trigger">
-              What about SEO optimization?
+              Do you provide revisions if I need changes?
               <span>+</span>
             </button>
             <div class="faq-content">
               <div>
-                SEO is built into every project. I follow best practices for performance, structure, and content optimization.
+                Yes. Small changes like text, color, layout, or image adjustments are included so the final thumbnail
+                feels ready before you upload.
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-pad container pricing-section" id="pricing">
-        <div class="section-header reveal">
-          <h2>Flexible Pricing Plans</h2>
-          <p>Transparent pricing for projects of all sizes. Each plan includes ongoing support and regular updates.</p>
-        </div>
-        <div class="pricing-grid">
-          <div class="pricing-card reveal">
-            <div class="pricing-header">
-              <h3 class="pricing-name">Starter</h3>
-              <p class="pricing-desc">Perfect for small projects and startups</p>
-              <div class="pricing-price">
-                <span class="pricing-amount">$2,999</span>
-                <span class="pricing-period">one-time</span>
-              </div>
-            </div>
-            <div class="pricing-features">
-              <div class="pricing-feature">Up to 5 pages</div>
-              <div class="pricing-feature">Responsive design</div>
-              <div class="pricing-feature">SEO optimization</div>
-              <div class="pricing-feature">Contact form</div>
-              <div class="pricing-feature">2 revisions</div>
-            </div>
-            <a class="pricing-cta" href="#contact">Get Started</a>
-          </div>
-
-          <div class="pricing-card featured reveal reveal-delay-2">
-            <div class="pricing-header">
-              <h3 class="pricing-name">Professional</h3>
-              <p class="pricing-desc">Most popular for growing businesses</p>
-              <div class="pricing-price">
-                <span class="pricing-amount">$5,999</span>
-                <span class="pricing-period">one-time</span>
-              </div>
-            </div>
-            <div class="pricing-features">
-              <div class="pricing-feature">Up to 15 pages</div>
-              <div class="pricing-feature">Advanced features</div>
-              <div class="pricing-feature">Full SEO strategy</div>
-              <div class="pricing-feature">E-commerce ready</div>
-              <div class="pricing-feature">5 revisions</div>
-              <div class="pricing-feature">2 months support</div>
-            </div>
-            <a class="pricing-cta" href="#contact">Start Project</a>
-          </div>
-
-          <div class="pricing-card reveal reveal-delay-1">
-            <div class="pricing-header">
-              <h3 class="pricing-name">Enterprise</h3>
-              <p class="pricing-desc">For complex, custom solutions</p>
-              <div class="pricing-price">
-                <span class="pricing-amount">Custom</span>
-                <span class="pricing-period">quote</span>
-              </div>
-            </div>
-            <div class="pricing-features">
-              <div class="pricing-feature">Unlimited pages</div>
-              <div class="pricing-feature">Custom integrations</div>
-              <div class="pricing-feature">Performance optimization</div>
-              <div class="pricing-feature">API development</div>
-              <div class="pricing-feature">Unlimited revisions</div>
-              <div class="pricing-feature">6 months support</div>
-            </div>
-            <a class="pricing-cta" href="#contact">Request Quote</a>
           </div>
         </div>
       </section>
 
       <section class="cta-section container" id="contact">
         <div class="cta-card reveal">
-          <h2>Ready to Build Something Amazing?</h2>
+          <h2>Ready for Better Thumbnails?</h2>
           <p>
-            Let's create a website that not only looks stunning but also drives real business results. Get in touch to discuss your project.
+            Message me with your channel link and video idea. I’ll help you turn it into a thumbnail that looks premium
+            and gets attention fast.
           </p>
-          <form class="contact-form" id="contactForm" method="POST" action="{% url 'contact' %}">
+          <form class="contact-form" id="contactForm" method="POST" action="{% url "contact" %}">
             {% csrf_token %}
-            <div class="contact-field">
-              <label for="companyName">Company Name</label>
-              <input id="companyName" name="company_name" type="text" placeholder="Your Company" required="">
+            <input type="hidden" name="_subject" value="New Thumbnail Project Message - Devkota Design" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style="display: none" tabindex="-1" autocomplete="off" />
+            <div class="contact-field contact-field-half">
+              <label for="channelName">Channel Name</label>
+              <input
+                id="channelName"
+                name="Channel Name"
+                type="text"
+                placeholder="Your Channel"
+                autocomplete="organization"
+                required=""
+              />
             </div>
-            <div class="contact-field">
+            <div class="contact-field contact-field-half">
               <label for="clientEmail">Your Email</label>
-              <input id="clientEmail" name="email" type="email" placeholder="your@email.com" required="">
+              <input
+                id="clientEmail"
+                name="Email"
+                type="email"
+                placeholder="example@gmail.com"
+                autocomplete="email"
+                required=""
+              />
             </div>
             <div class="contact-field contact-field-full">
-              <label for="projectDetails">Project Details</label>
-              <textarea id="projectDetails" name="message" placeholder="Tell me about your project..." required=""></textarea>
+              <label for="clientMessage" class="sr-only">Your Message</label>
+              <textarea id="clientMessage" name="Message" placeholder="Your Message" rows="5" required=""></textarea>
             </div>
-            <button class="contact-submit" type="submit">Send Message</button>
+            <button class="contact-submit" type="submit">Submit</button>
           </form>
           <div class="social-grid">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-card">
+            <a href="https://x.com/Prakashgfx99" target="_blank" rel="noopener noreferrer" class="social-card">
               <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                ></path>
               </svg>
-              <span>Twitter</span>
+              <span>Twitter / X</span>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-card">
+            <a href="https://wa.me/8801600106114" target="_blank" rel="noopener noreferrer" class="social-card">
               <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"></path>
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.672 1.433 5.661 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                ></path>
               </svg>
-              <span>LinkedIn</span>
+              <span>WhatsApp</span>
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-card">
+            <a href="https://discord.gg/uneREXGHSx" target="_blank" rel="noopener noreferrer" class="social-card">
               <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                <path
+                  d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 004.1 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.419-2.157 2.419zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.419-2.157 2.419z"
+                ></path>
               </svg>
-              <span>GitHub</span>
+              <span>Discord</span>
             </a>
           </div>
         </div>
@@ -627,10 +753,15 @@
     </main>
 
     <footer class="container">
-      <span>© <span id="year">2026</span> Aayush. All rights reserved.</span>
-      <span>Premium Web Design & Development</span>
+      <span>
+        ©
+        <span id="year"></span>
+        Devkota Design
+      </span>
+      <span>Premium YouTube Thumbnail Design</span>
     </footer>
 
-    <script src="{% static 'js/script.js' %}"></script>
-  </body>
+    
+  <script src="{% static "js/script.js" %}"></script>
+</body>
 </html>
